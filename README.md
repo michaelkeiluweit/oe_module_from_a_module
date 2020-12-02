@@ -14,8 +14,8 @@ git clone https://github.com/michaelkeiluweit/oe_module_from_a_module _mke_repos
 composer config repositories.mke/modulefromanothermodule/m1 path _mke_repository/mke/m1
 composer config repositories.mke/modulefromanothermodule/m2 path _mke_repository/mke/m2
 
-composer require michaelkeiluweit/module-from-another-module-m1
-composer require michaelkeiluweit/module-from-another-module-m2
+composer require michaelkeiluweit/module-from-another-module-m1:@dev
+composer require michaelkeiluweit/module-from-another-module-m2:@dev
 ```
 
 Call Module 1 somewhere, for example directly in the file `source/index.php`:
