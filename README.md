@@ -18,7 +18,7 @@ composer require michaelkeiluweit/module-from-another-module-m1
 composer require michaelkeiluweit/module-from-another-module-m2
 ```
 
-Call Module 1 somewhere, for example directly in the file `index.php`:
+Call Module 1 somewhere, for example directly in the file `source/index.php`:
 ```php
 // ...
 redirectIfShopNotConfigured();
