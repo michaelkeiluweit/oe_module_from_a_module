@@ -1,4 +1,9 @@
-# Install
+
+## About
+This repository should give an idea how to extend a module by a module. 
+
+
+## Install
 
 Switch to the root directory of the shop. You'll find the directories `source/` and `vendor/` there.
 
@@ -19,7 +24,7 @@ Call Module 1 somewhere, for example directly in the file `index.php`:
 redirectIfShopNotConfigured();
 
 
-if (!isAdmin()) {
+if (!isAdmin()) { // Execute the code only in the frontend area of the shop.
     
     $m = oxNew(\OxidEsales\Eshop\Core\Module\Module::class);
     
@@ -32,3 +37,6 @@ if (!isAdmin()) {
 //Starts the shop
 OxidEsales\EshopCommunity\Core\Oxid::run();
 ```
+
+Please note: Since we don't call the module by a controller, the framework doesn't check if the module is active.
+This means the code will be executed, whether it is set active or not.
