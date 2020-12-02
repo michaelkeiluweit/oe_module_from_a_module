@@ -38,5 +38,7 @@ if (!isAdmin()) { // Execute the code only in the frontend area of the shop.
 OxidEsales\EshopCommunity\Core\Oxid::run();
 ```
 
+And activate at least module 1.  
+
 Please note: Since we don't call the module by a controller, the framework doesn't check if the module is active.
-This means the code will be executed, whether it is set active or not.
+This means the code will be executed, whether it is set active or not, as long as we don't check if it is active by ourselves (as it is done in this example).
