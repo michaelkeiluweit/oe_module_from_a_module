@@ -1,0 +1,23 @@
+{
+    "name": "michaelkeiluweit/module-from-another-module-m1",
+    "description": "This is module 1. Will be extended by module 2.",
+    "type": "oxideshop-module",
+    "homepage": "https://oxid-esales.com",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Michael Keiluweit",
+            "email": "michael.keiluweit@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MichaelKeiluweit\\ModuleFromAnotherModule\\Module1\\": "../../../source/modules/mke/module-from-another-module/m1"
+        }
+    },
+    "extra": {
+        "oxideshop": {
+            "target-directory": "mke/module-from-another-module/m1"
+        }
+    }
+}
